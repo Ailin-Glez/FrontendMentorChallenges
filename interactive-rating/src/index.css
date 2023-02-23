@@ -1,0 +1,132 @@
+:root {
+  --primary: #fb7312;
+  --light-light-grey: #c8cfd7;
+  --light-grey: #7b8896;
+  --medium-grey: #262f38;
+  --dark-grey: #212832;
+  --dark-blue: #252d36;
+  --very-dark-blue: #141519;
+
+  font-family: Overpass;
+  color: var(--light-light-grey);
+  background-color: var(--very-dark-blue);
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 25rem;
+  height: 25rem;
+  background-color: var(--dark-grey);
+  text-align: left;
+}
+
+.text {
+  margin: 0 1.5rem;
+  color: var(--light-grey);
+}
+
+.circle {
+  border: none;
+  color: var(--light-grey);
+  font-size: 1rem;
+  background-color: var(--medium-grey);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.circle:not(.selected):hover {
+  background-color: var(--light-grey);
+}
+
+.star {
+  align-self: flex-start;
+  margin-left: 1rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+  background-color: var(--medium-grey);
+}
+
+.selected,
+.submit-btn {
+  color: white;
+  background-color: var(--primary);
+}
+
+.submit-btn {
+  letter-spacing: 0.15rem;
+  font-size: 1rem;
+  justify-self: flex-end;
+  text-transform: uppercase;
+  padding: 0.8rem 8.5rem;
+  border: none;
+  border-radius: 200px;
+}
+
+.submit-btn:hover {
+  background-color: white;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.rating-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.thank-you {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.thank-you-selection {
+  width: 14rem;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.selection {
+  margin-right: 0 auto;
+  font-size: 0.8rem;
+  background-color: var(--medium-grey);
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 200px;
+  color: var(--primary);
+}
+
+.final-text {
+  color: var(--light-grey);
+}
