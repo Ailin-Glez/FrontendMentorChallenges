@@ -1,0 +1,81 @@
+:root {
+  --light-gray: #d1dadf;
+  --gray: #323b47;
+  --dark-gray: #202732;
+  --green: #53ffab;
+  --light-green: #4bffb4;
+  font-family: Manrope;
+
+  color: var(--light-gray);
+  background-color: var(--dark-gray);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+#root {
+  margin: 0 auto;
+}
+
+.card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 28rem;
+  max-height: 16rem;
+  border-radius: 3%;
+  background-color: var(--gray);
+  box-shadow: 0 2em 2em rgba(0, 0, 0, 0.1);
+}
+
+.advice-number {
+  margin: 0;
+  color: var(--green);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-size: 0.7rem;
+}
+
+.advice-section {
+  min-height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advice {
+  font-size: 1.4rem;
+}
+
+.divider {
+  margin: 1.5rem;
+}
+
+.dice-btn {
+  background-color: var(--green);
+  box-sizing: content-box;
+  border-radius: 50px;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.dice-btn:hover {
+  box-shadow: 2px 2px 30px var(--light-green);
+}
