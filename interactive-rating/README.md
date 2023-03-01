@@ -7,13 +7,10 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -32,11 +29,6 @@ Users should be able to:
 
 ![](./solution.png)
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 ## My process
 
 ### Built with
@@ -48,27 +40,25 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+I learned to create small component first and reuse them in another components. When creating the 'Rating component I didn´t how to select a single circle, I always ended selecting all. I was able to achieve that with the following solution (using a new state to handle the single number selected and passing the property 'isSelected' using the index of the iteration)
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
+const numbers = Array(5)
+  .fill()
+  .map((_, i) => ++i); // Array with numbers from 1 to 5
+const rating = numbers.map(() => false); // Mapped Array from 'numbers', with 5 positions, filled with 'false' value
+const [ratingActive, setRatingActive] = useState(rating);
+
+const handleSelection = (number) => {
+  const newRating = [...rating];
+  newRating[number - 1] = true; // current number - 1 = index
+  setRatingActive(newRating);
 };
+
+// isSelected={ratingActive[i]}
 ```
 
 ## Author
 
-- Linkedin - [Ailin Garcia](https://www.your-site.com)
-- Frontend Mentor - [@Ailin-Glez](https://www.linkedin.com/in/ailin-garcía-gonzález-600b46168)
+- Frontend Mentor - [@Ailin-Glez](https://www.frontendmentor.io/profile/Ailin-Glez)
+- Linkedin - [Ailin Garcia](https://www.linkedin.com/in/ailin-garcía-gonzález-600b46168)

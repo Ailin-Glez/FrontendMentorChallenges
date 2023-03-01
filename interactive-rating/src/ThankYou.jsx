@@ -1,3 +1,7 @@
+/**
+ * Component to display a thank you message
+ *  @param {number} number number to display the user selection. Example '1 of 5'
+ */
 function ThankYou({ number }) {
   return (
     <div className="thank-you">

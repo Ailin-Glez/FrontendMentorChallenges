@@ -87,7 +87,7 @@ h1 {
 
 .submit-btn {
   letter-spacing: 0.15rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   justify-self: flex-end;
   text-transform: uppercase;
   padding: 0.9rem 8.5rem;
@@ -114,7 +114,6 @@ h1 {
 .thank-you-selection {
   width: 14rem;
   margin: auto;
-  margin-bottom: 3rem;
 }
 
 .selection {
@@ -136,6 +135,10 @@ h1 {
     letter-spacing: 0.1rem;
     font-size: 1.4rem;
     margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
   }
 
   .text {

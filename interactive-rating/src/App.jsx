@@ -11,10 +11,6 @@ function App() {
     setNumberSelected(number);
   };
 
-  const handleSubmit = () => {
-    setIsSubmitted((submitted) => !submitted);
-  };
-
   return (
     <div className="card">
       {isSubmitted ? (
@@ -27,7 +23,7 @@ function App() {
             <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
           </div>
           <Rating handleNumberSelected={handleNumberSelected} />
-          <button className="submit-btn" onClick={handleSubmit}>
+          <button className="submit-btn" onClick={() => setIsSubmitted(!isSubmitted)}>
             Submit
           </button>
         </>
