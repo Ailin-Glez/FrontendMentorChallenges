@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="card">
       <p className="advice-number">{isLoading ? "Advice" : `Advice # ${advice.id}`}</p>
-      <div className="advice-div">
+      <div className="advice-section">
         <p className="advice">{isLoading ? "Loading..." : `"${advice.advice}"`}</p>
       </div>
       <img className="divider" src="./pattern-divider-desktop.svg" alt="divider" />
