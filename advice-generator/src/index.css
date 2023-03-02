@@ -65,7 +65,7 @@ body {
 }
 
 .divider {
-  content: url("./pattern-divider-desktop.svg");
+  content: url("../public/pattern-divider-desktop.svg");
   margin: 1.5rem;
 }
 
@@ -100,6 +100,6 @@ body {
   }
 
   .divider {
-    content: url("./pattern-divider-mobile.svg");
+    content: url("../public/pattern-divider-mobile.svg");
   }
 }
