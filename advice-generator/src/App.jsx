@@ -11,11 +11,11 @@ function App() {
   return (
     <div className="card">
       <p className="advice-number">{isLoading ? "Advice" : `Advice # ${advice.id}`}</p>
-      <section className="advice-section">
+      <div className="advice-div">
         <p className="advice">{isLoading ? "Loading..." : `"${advice.advice}"`}</p>
-      </section>
-      <img className="divider" />
-      <button className="dice-btn" src="./pattern-divider-desktop.svg" alt="divider" onClick={() => getAdvice()}>
+      </div>
+      <img className="divider" src="./pattern-divider-desktop.svg" alt="divider" />
+      <button className="dice-btn" onClick={() => getAdvice()}>
         <img src="./icon-dice.svg" alt="dice image" />
       </button>
     </div>
