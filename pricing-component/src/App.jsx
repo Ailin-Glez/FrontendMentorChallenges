@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 function App() {
   const [isMonthly, setIsMonthly] = useState(false)
-  console.log(isMonthly)
+
   return (
     <main>
       <h1>Our Pricing</h1>

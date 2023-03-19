@@ -63,6 +63,7 @@ h1 {
   margin: 3rem;
   font-size: 2rem;
   color: var(--grayish-blue);
+  margin-bottom: 1.2rem;
 }
 
 .card {
@@ -70,21 +71,23 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
   background-color: var(--very-light-grayish-blue);
-  width: 22rem;
-  min-height: 22rem;
-  padding: 2rem 2rem 6rem 2rem;
-  border-radius: 10px;
+  width: 20rem;
+  min-height: 20rem;
+  padding: 2rem;
+  border-radius: 15px;
   color: var(--dark-grayish-blue);
 }
 
 .card.selected {
   color: white;
-  min-height: 32rem;
+  /* min-height: 30rem; */
   background-color: var(--primary);
+  padding: 3.5rem 2rem;
 }
 
 .licence {
   font-size: 1.2rem;
+  margin-bottom: 0;
 }
 
 .price {
@@ -107,10 +110,22 @@ button {
   background-color: var(--primary);
   cursor: pointer;
   color: var(--very-light-grayish-blue);
-  margin-top: 2rem;
+  margin-top: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: 'Montserrat';
+}
+
+button:hover {
+  background-color: var(--very-light-grayish-blue);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.selected button:hover {
+  background-color: var(--primary);
+  color: var(--very-light-grayish-blue);
+  border: 1px solid var(--very-light-grayish-blue);
 }
 
 .details {
@@ -132,7 +147,7 @@ button {
   align-items: center;
   gap: 10px;
   color: var(--grayish-blue);
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .selected button {
